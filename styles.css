@@ -1,0 +1,182 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 20px;
+    background: #fff; 
+}
+
+#header-logo {
+    width: 150px;
+    height: auto;
+    position: relative; 
+    margin-left: 20px; 
+    margin-bottom: 10px; 
+}
+
+#footer-logo {
+    width: 150px;
+    height: auto;
+    margin-left: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(39, 165, 165);
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.content-container {
+    display: flex; 
+}
+
+.overlay-text {
+    width: 50%; 
+    padding: 20px; 
+    color: rgb(39, 165, 165); 
+    text-align: left; 
+}
+
+.home-image-container {
+    width: 50%; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.background-image {
+    width: 100%;
+    height: auto; 
+}
+
+.kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    font-style: italic;
+}
+.kanit-thin-italic-footer {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.kanit-regular-navbar {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around; /* Even spacing between images */
+    align-items: flex-start; /* Align items at the top */
+    margin: 0; /* Remove default margin */
+}
+
+.image-container {
+    flex: 1; /* Allows all containers to grow equally */
+    margin: 10px; /* Adjusts spacing between containers */
+    position: relative;
+}
+
+.row-image {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: 500px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images cover the space */
+}
+
+.text-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(39, 165, 165);
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.full-width-image-container {
+    position: relative; /* Allows absolute positioning of children */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow if needed */
+}
+
+.full-width-image {
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.rectangle {
+    width: 100%; /* Full width */
+    height: 50px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    position: absolute; /* Position it absolutely within the container */
+    bottom: 5px; /* Adjust to create space above the footer */
+    left: 0; /* Align to the left */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+.rectangle-text {
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Adjust font size as needed */
+    font-family: "Kanit", sans-serif;
+}
+
+
+
+
+
+
+
